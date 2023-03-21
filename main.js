@@ -5,13 +5,6 @@ function startClassification(){
 function modelready(){
     classifier.classify(gotResults);
 }
-function gotResults(results,error){
-    if(error){
-        console.error(error);
-    }
-    else
-    console.log(results);
-}
 function gotResults(error,results) {
     if(error){
         console.error(error);
